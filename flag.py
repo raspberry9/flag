@@ -77,6 +77,8 @@ class Flag(object):
         for key, value in args.iteritems():
             self.values[key] = value
 
+        return self.values
+
     def show_help_message(self):
         '''--help 옵션(도움말 출력)을 처리 합니다.'''
         if self.desc:
